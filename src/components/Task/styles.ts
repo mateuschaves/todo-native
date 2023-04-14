@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import theme from '~/theme/theme';
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
     background-color: ${theme.colors.gray500};
     border-radius: 8px;
 
@@ -27,16 +27,22 @@ export const Title = styled.Text`
     font-weight: 700;
 
     margin-right: 16px;
+    margin-left: 8px;
+`
+
+export const TitleDone = styled(Title)`
+    text-decoration: line-through;
+    color: ${theme.colors.gray300};
+
+    text-decoration-color: ${theme.colors.gray300};
 `
 
 export const Circle = styled.View`
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
 
     border-radius: 20px;
 
     border-color: ${theme.colors.blue};
     border-width: 1px;
-
-    margin-right: 16px;
 `
