@@ -22,9 +22,8 @@ export default function Home() {
     confirmRemoveTask,
     inputRef,
     toogleTaskDone,
+    tasksDone,
   } = useHomeViewModel();
-
-  const tasksDone = tasks.filter((task) => task.done).length;
 
   return (
     <Container>

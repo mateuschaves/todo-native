@@ -62,7 +62,8 @@ const useHomeViewModel = () => {
         toogleTaskDone,
         confirmRemoveTask,
         inputRef,
-        removeTask
+        removeTask,
+        tasksDone: tasks.filter((task) => task.done).length || 0,
     }
 }
 
