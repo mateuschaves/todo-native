@@ -49,7 +49,6 @@ export default function Home() {
           />
         </Info>
         <Divider />
-        {tasks.length === 0 && <EmptyList />}
         <FlatList
           data={tasks.sort((a, b) => (a.done === b.done ? 0 : a.done ? 1 : -1))}
           keyExtractor={(item) => String(item.id)}
@@ -61,6 +60,7 @@ export default function Home() {
               onPress={() => toogleTaskDone(item)}
             />
           )}
+          ListEmptyComponent={<EmptyList />}
         />
       </Body>
     </Container>
