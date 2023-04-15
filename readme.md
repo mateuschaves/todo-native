@@ -1,10 +1,10 @@
 # Todo React Native
 
 <p align="center">
-  <img src="https://i.imgur.com/ysImOTd.mp4" alt="App demonstration">
+  <img src="./doc/gif.gif" alt="App demonstration" width="200" heigth="400">
 </p>
 
-Este projeto é um exemplo de um To do feito em react native usando Expo, Typescript e Testes Unitários.
+Este projeto é um exemplo de um Todo feito em react native usando Expo, Typescript e Testes Unitários.
 
 ## Requisitos
 
